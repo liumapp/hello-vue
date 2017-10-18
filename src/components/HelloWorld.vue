@@ -17,6 +17,7 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <span v-bind:title="hMsg">{{ message }}</span>
   </div>
 </template>
 
@@ -25,7 +26,9 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      message: 'hello vue',
+      hMsg: '页面加载于 ' + new Date().toLocaleString()
     }
   }
 }
