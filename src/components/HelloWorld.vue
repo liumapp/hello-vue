@@ -24,6 +24,9 @@
     <router-link to="/bar">Go to Bar</router-link>
     <br>
     <router-link to="/user/1">User1</router-link>&nbsp;<router-link to="/user/2">User2</router-link>
+    <br>
+    <router-link to="/product/1">product1</router-link>&nbsp;<router-link to="/product/2">product2</router-link>
+
   </div>
 </template>
 
