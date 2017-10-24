@@ -5,6 +5,7 @@ import MouseOver from '@/components/MouseOver'
 import Product from '@/page/product/index'
 import ProductDetail from '@/page/product/detail'
 import ProductList from '@/page/product/list'
+import ProductNone from '@/page/product/none'
 
 Vue.use(Router)
 
@@ -61,6 +62,10 @@ export default new Router({
         {
           path: 'list',
           component: ProductList
+        },
+        {
+          path: '',
+          component: ProductNone
         }
       ]
     }
