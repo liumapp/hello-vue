@@ -7,6 +7,7 @@ Vue.use(Router)
 
 const Foo = { template: '<div>foo</div>' }
 const Bar = { template: '<div>bar</div>' }
+const User = {template: '<div>this is user number {{ $route.params.id}}</div>'}
 
 export default new Router({
   routes: [
@@ -31,6 +32,10 @@ export default new Router({
     {
       path: '/bar',
       component: Bar
+    },
+    {
+      path: '/user/:id',
+      component: User
     }
 
   ]
