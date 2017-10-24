@@ -13,7 +13,7 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/',
+      path: '/mouseOver',
       name: 'mouse',
       component: MouseOver
     }
