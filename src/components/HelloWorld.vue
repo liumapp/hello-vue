@@ -17,7 +17,11 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
-    <router-link to="/mouseOver">Go to mouseOver</router-link>
+    <router-link to="/Hello/hello/">Go to mouseOver</router-link>
+    <br>
+    <router-link to="/foo">Go to foo</router-link>
+    <br>
+    <router-link to="/bar">Go to Bar</router-link>
   </div>
 </template>
 
