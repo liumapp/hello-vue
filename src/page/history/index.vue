@@ -26,7 +26,7 @@
         this.id += 1
       },
       testPush: function (event) {
-        this.$router.push({ path: `/history/${this.id}/${this.name}` })
+        this.$router.push({ path: `/history/${this.id}/${this.name}` }) //push与router-link的点击类似
       }
     }
   }
