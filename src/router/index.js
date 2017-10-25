@@ -6,6 +6,7 @@ import Product from '@/page/product/index'
 import ProductDetail from '@/page/product/detail'
 import ProductList from '@/page/product/list'
 import ProductNone from '@/page/product/none'
+import History from '@/page/history/index.vue'
 
 Vue.use(Router)
 
@@ -68,6 +69,10 @@ export default new Router({
           component: ProductNone
         }
       ]
+    },
+    {
+      path: '/history/:id/:name',
+      component: History
     }
 
   ]
