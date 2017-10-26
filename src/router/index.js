@@ -7,6 +7,10 @@ import ProductDetail from '@/page/product/detail'
 import ProductList from '@/page/product/list'
 import ProductNone from '@/page/product/none'
 import History from '@/page/history/index.vue'
+import MultyView from '@/page/multyview/index.vue'
+import MultyDefault from '@/page/multyview/default.vue'
+import MultyA from '@/page/multyview/a.vue'
+import MultyB from '@/page/multyview/b.vue'
 
 Vue.use(Router)
 
@@ -73,6 +77,15 @@ export default new Router({
     {
       path: '/history/:id/:name',
       component: History
+    },
+    {
+      path: '/multyView',
+      component: MultyView,
+      components: {
+        default: MultyDefault,
+        a: MultyA,
+        b: MultyB
+      }
     }
 
   ]
