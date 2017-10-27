@@ -6,11 +6,12 @@ import Product from '@/page/product/index'
 import ProductDetail from '@/page/product/detail'
 import ProductList from '@/page/product/list'
 import ProductNone from '@/page/product/none'
-import History from '@/page/history/index.vue'
-import MultyView from '@/page/multyview/index.vue'
+import History from '@/page/history/index.js'
+import MultyView from '@/page/multyview/index.js'
 import MultyDefault from '@/page/multyview/default.vue'
 import MultyA from '@/page/multyview/a.vue'
 import MultyB from '@/page/multyview/b.vue'
+import Count from '@/page/count/index'
 
 Vue.use(Router)
 
@@ -86,6 +87,10 @@ export default new Router({
         a: MultyA,
         b: MultyB
       }
+    },
+    {
+      path: '/count',
+      component: Count
     }
 
   ]

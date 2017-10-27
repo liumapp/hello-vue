@@ -30,6 +30,8 @@
     <router-link to="/history/1/first-example">go to history</router-link>
     <br>
     <router-link to="/multyView">go to multy-view</router-link>
+    <br>
+    <router-link to="/count">go to count</router-link>
   </div>
 </template>
 
