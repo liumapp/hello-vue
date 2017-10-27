@@ -3,17 +3,17 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-const store = new Vuex.Store({
-  state: {
-    globalCount: 0
-  },
-  mutations: {
-    increment (state) {
-      state.count++
-    }
-  }
-})
-
-export default {
-  store
+const state = {
+  globalCount: 0
 }
+
+const mutations = {
+  increment (state) {
+    state.globalCount++
+  }
+}
+
+export default new Vuex.Store({
+  state,
+  mutations
+})
