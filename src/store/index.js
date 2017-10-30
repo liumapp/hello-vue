@@ -4,7 +4,8 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-  globalCount: 0
+  globalCount: 0,
+  tmpData: {a: 1, b: 2}
 }
 
 const mutations = {
