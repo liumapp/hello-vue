@@ -7,19 +7,20 @@
 </template>
 
 <script>
-  export default {
+export default {
 
-    data () {
-      return {
-        count: 0
-      }
-    },
-
-    methods: {
-      increment () {
-        this.count++
-      }
+  data () {
+    return {
+      count: 0
     }
+  },
 
+  methods: {
+    increment () {
+      console.log(this.$store.state.globalCount)
+      this.count++
+    }
   }
+
+}
 </script>
