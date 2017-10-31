@@ -17,7 +17,7 @@ export default {
 
   methods: {
     increment () {
-      console.log(this.$store.state.globalCount)
+      console.log(this.$store)
       this.count++
     }
   }
