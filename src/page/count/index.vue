@@ -3,23 +3,16 @@
    this is count number : {{ this.$store.state.globalCount }}
     <br>
     <button v-on:click="increment">add</button>
+    <br>
+    <router-link to="/mapState">go to mapStateCount</router-link>
   </div>
 </template>
 
 <script>
 export default {
-
-  data () {
-    return {
-      count: 0
-    }
-  },
-
   methods: {
     increment () {
       this.$store.commit('increment')
-      console.log(this.$store)
-      this.count++
     }
   }
 
