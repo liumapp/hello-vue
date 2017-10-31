@@ -11,6 +11,7 @@
 <script>
   import { mapState } from 'vuex'
   export default {
+//    此时改变A,B,C的状态并不能改变store中的linkA的值
     computed: mapState({
       // 箭头函数可使代码更简练
       A: state => state.linkA,
