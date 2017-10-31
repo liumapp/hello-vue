@@ -1,6 +1,6 @@
 <template>
   <div>
-   this is count number : {{ count }}
+   this is count number : {{ this.$store.state.globalCount }}
     <br>
     <button v-on:click="increment">add</button>
   </div>
@@ -17,6 +17,7 @@ export default {
 
   methods: {
     increment () {
+      this.$store.commit('increment')
       console.log(this.$store)
       this.count++
     }
