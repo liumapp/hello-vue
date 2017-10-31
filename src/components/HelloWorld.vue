@@ -32,6 +32,8 @@
     <router-link to="/multyView">go to multy-view</router-link>
     <br>
     <router-link to="/count">go to count</router-link>
+    <br>
+    <router-link to="/toast">plugin test , by toast</router-link>
   </div>
 </template>
 

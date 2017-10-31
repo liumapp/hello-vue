@@ -4,6 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router/index.js'
 import store from './store/index.js'
+import 'vue2-toast/lib/toast.css'
+import Toast from 'vue2-toast'
+
+Vue.use(Toast)
 
 Vue.config.productionTip = false
 /* eslint-disable no-new */

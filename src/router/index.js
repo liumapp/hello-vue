@@ -13,6 +13,7 @@ import MultyA from '@/page/multyview/a.vue'
 import MultyB from '@/page/multyview/b.vue'
 import Count from '@/page/count/index'
 import MapStateCount from '@/page/count/mapStateCount.vue'
+import Toast from '@/page/toast'
 
 Vue.use(Router)
 
@@ -96,6 +97,10 @@ export default new Router({
     {
       path: '/mapState',
       component: MapStateCount
+    },
+    {
+      path: '/toast',
+      component: Toast
     }
 
   ]
