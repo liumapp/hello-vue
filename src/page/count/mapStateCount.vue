@@ -1,8 +1,10 @@
 <template>
   <div>
-    this is count number : {{ count }} of mapStateCount
+    this is mapState test page , let's see A : {{ A }}
     <br>
-    <button v-on:click="countPlusLocalState()">add</button>
+    let's see B : {{ B }}
+    <br>
+    let's see C : {{ C }}
   </div>
 </template>
 
@@ -11,16 +13,9 @@
   export default {
     computed: mapState({
       // 箭头函数可使代码更简练
-      count: state => state.globalCount,
-
-      // 传字符串参数 'count' 等同于 `state => state.count`
-//      countAlias: 'count',
-
-      // 为了能够使用 `this` 获取局部状态，必须使用常规函数
-      countPlusLocalState (state) {
-        return state.globalCount ++
-      }
+      A: state => state.linkA,
+      B: state => state.linkB,
+      C: state => state.linkC
     })
-
   }
 </script>

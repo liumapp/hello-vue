@@ -5,7 +5,10 @@ Vue.use(Vuex)
 
 const state = {
   globalCount: 0,
-  tmpData: {a: 1, b: 2}
+  tmpData: {a: 1, b: 2},
+  linkA: 'this is a',
+  linkB: 'this is b',
+  linkC: 'this is c'
 }
 
 const mutations = {
