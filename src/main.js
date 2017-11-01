@@ -7,7 +7,12 @@ import store from './store/index.js'
 import 'vue2-toast/lib/toast.css'
 import Toast from 'vue2-toast'
 
-Vue.use(Toast)
+Vue.use(Toast, {
+  defaultType: 'center',
+  duration: 1000,
+  wordWrap: true,
+  width: '150px'
+})
 
 Vue.config.productionTip = false
 /* eslint-disable no-new */
