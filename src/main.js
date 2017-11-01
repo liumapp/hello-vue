@@ -6,12 +6,17 @@ import router from './router/index.js'
 import store from './store/index.js'
 import 'vue2-toast/lib/toast.css'
 import Toast from 'vue2-toast'
+import Jwt from 'vue-plugin-jwt'
 
 Vue.use(Toast, {
   defaultType: 'center',
   duration: 1000,
   wordWrap: true,
   width: '150px'
+})
+
+Vue.use(Jwt, {
+  store: store
 })
 
 Vue.config.productionTip = false

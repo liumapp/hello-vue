@@ -11,6 +11,7 @@
   export default {
     methods: {
       openTop () {
+        console.log(this.$toast.toastVM)
         this.$toast.top('top')
       },
       openCenter () {

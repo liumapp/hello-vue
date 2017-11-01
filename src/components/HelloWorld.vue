@@ -34,6 +34,8 @@
     <router-link to="/count">go to count</router-link>
     <br>
     <router-link to="/toast">plugin test , by toast</router-link>
+    <br>
+    <router-link to="/jwt">go to jwt link</router-link>
   </div>
 </template>
 

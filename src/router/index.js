@@ -14,6 +14,7 @@ import MultyB from '@/page/multyview/b.vue'
 import Count from '@/page/count/index'
 import MapStateCount from '@/page/count/mapStateCount.vue'
 import Toast from '@/page/toast'
+import Jwt from '@/page/jwt'
 
 Vue.use(Router)
 
@@ -101,6 +102,10 @@ export default new Router({
     {
       path: '/toast',
       component: Toast
+    },
+    {
+      path: '/jwt',
+      component: Jwt
     }
 
   ]

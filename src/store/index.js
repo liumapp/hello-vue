@@ -8,12 +8,16 @@ const state = {
   tmpData: {a: 1, b: 2},
   linkA: 'this is a',
   linkB: 'this is b',
-  linkC: 'this is c'
+  linkC: 'this is c',
+  token: null
 }
 
 const mutations = {
   increment (state) {
     state.globalCount++
+  },
+  setToken (state, token) {
+    state.token = token
   }
 }
 
