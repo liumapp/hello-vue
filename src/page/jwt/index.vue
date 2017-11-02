@@ -8,8 +8,7 @@
   export default {
     methods: {
       test () {
-        this.jwt.getToken()
-        console.log(this.jwt.token)
+        this.$alert()
       }
     }
   }

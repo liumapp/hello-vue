@@ -15,9 +15,7 @@ Vue.use(Toast, {
   width: '150px'
 })
 
-Vue.use(Jwt, {
-  store: store
-})
+Vue.use(Jwt)
 
 Vue.config.productionTip = false
 /* eslint-disable no-new */

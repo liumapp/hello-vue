@@ -16,8 +16,8 @@ const mutations = {
   increment (state) {
     state.globalCount++
   },
-  setToken (state, token) {
-    state.token = token
+  setToken (state, payload) {
+    state.token = payload.token
   }
 }
 
