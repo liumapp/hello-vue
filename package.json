@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "axios": "^0.17.0",
+    "jsonp": "^0.2.1",
     "vue": "^2.5.2",
     "vue-plugin-jwt": "github:hlw-tec/vue-plugin-jwt",
     "vue-router": "^3.0.1",
