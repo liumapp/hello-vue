@@ -7,6 +7,7 @@ import store from './store/index.js'
 import 'vue2-toast/lib/toast.css'
 import Toast from 'vue2-toast'
 import Jwt from 'vue-plugin-jwt'
+import Axios from 'axios'
 
 Vue.use(Toast, {
   defaultType: 'center',
@@ -15,7 +16,10 @@ Vue.use(Toast, {
   width: '150px'
 })
 
-Vue.use(Jwt)
+Vue.use(Jwt, {
+  store: store,
+  axios: Axios
+})
 
 Vue.config.productionTip = false
 /* eslint-disable no-new */
