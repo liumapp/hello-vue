@@ -9,6 +9,7 @@ import Toast from 'vue2-toast'
 import Jwt from 'vue-plugin-jwt'
 import Axios from 'axios'
 import Jsonp from 'jsonp'
+import $ from 'jquery'
 
 Vue.use(Toast, {
   defaultType: 'center',
@@ -20,7 +21,8 @@ Vue.use(Toast, {
 Vue.use(Jwt, {
   store: store,
   axios: Axios,
-  jsonp: Jsonp
+  jsonp: Jsonp,
+  $: $
 })
 
 Vue.config.productionTip = false
