@@ -7,8 +7,6 @@ import store from './store/index.js'
 import 'vue2-toast/lib/toast.css'
 import Toast from 'vue2-toast'
 import Jwt from 'vue-plugin-jwt'
-import Axios from 'axios'
-import Jsonp from 'jsonp'
 import $ from 'jquery'
 
 Vue.use(Toast, {
@@ -20,8 +18,6 @@ Vue.use(Toast, {
 
 Vue.use(Jwt, {
   store: store,
-  axios: Axios,
-  jsonp: Jsonp,
   $: $
 })
 
